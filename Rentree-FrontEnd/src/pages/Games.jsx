@@ -1,0 +1,101 @@
+import React from 'react'
+import { Link } from "react-router-dom"; 
+import { Button } from 'react-bootstrap'
+
+
+
+export default function Games() {
+    return (
+        <div className='container mt-5'>
+            <h1 class= " text-center mb-5 text-color" style={{color:"blue"}}><b>GAMES</b></h1>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="https://gmedia.playstation.com/is/image/SIEPDC/resident-evil-village-store-art-01-ps5-en-09dec20$en?$1200px$" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Atomic Habits</h5>
+                        <p class="card-text text-center">MRP - RS 500</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small class="text-muted "><Button variant="outline-primary" ><Link to = "/buy" className="text-decoration-none text-dark">BUY NOW</Link></Button></small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://gmedia.playstation.com/is/image/SIEPDC/battlefield-2042-store-art-01-en-22jun21?$1200px$" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Atomic Habits</h5>
+                        <p class="card-text text-center">MRP - RS 500</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small class="text-muted "><Button variant="outline-primary" ><Link to = "/buy" className="text-decoration-none text-dark">BUY NOW</Link></Button></small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://gmedia.playstation.com/is/image/SIEPDC/nba-2k22-standard-edition-store-art-01-ps5-en-22september21?$1200px$" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Atomic Habits</h5>
+                        <p class="card-text text-center">MRP - RS 500</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small class="text-muted "><Button variant="outline-primary" ><Link to = "/buy" className="text-decoration-none text-dark">BUY NOW</Link></Button></small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://i0.wp.com/bookbins.in/wp-content/uploads/2021/08/Bookbins_The_Magic_Of_Thinking_Big.png?fit=2048%2C2048&ssl=1" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Atomic Habits</h5>
+                        <p class="card-text text-center">MRP - RS 500</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small class="text-muted "><Button variant="outline-primary" ><Link to = "/buy" className="text-decoration-none text-dark">BUY NOW</Link></Button></small>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="card-deck mt-5 mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="https://i0.wp.com/bookbins.in/wp-content/uploads/2021/08/Bookbins_Ego_Is_The_Enemy.png?resize=768%2C768&ssl=1" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Atomic Habits</h5>
+                        <p class="card-text text-center">MRP - RS 500</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small class="text-muted "><Button variant="outline-primary" ><Link to = "/buy" className="text-decoration-none text-dark">BUY NOW</Link></Button></small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://i0.wp.com/bookbins.in/wp-content/uploads/2021/08/Bookbins_The_80_20_Principle.png?resize=768%2C768&ssl=1" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Atomic Habits</h5>
+                        <p class="card-text text-center">MRP - RS 500</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small class="text-muted "><Button variant="outline-primary" ><Link to = "/buy" className="text-decoration-none text-dark">BUY NOW</Link></Button></small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://i0.wp.com/bookbins.in/wp-content/uploads/2021/08/Bookbins_The_Monk_Who_Sold_His_Ferrari.png?resize=768%2C768&ssl=1" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Atomic Habits</h5>
+                        <p class="card-text text-center">MRP - RS 500</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small class="text-muted "><Button variant="outline-primary" ><Link to = "/buy" className="text-decoration-none text-dark">BUY NOW</Link></Button></small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://i0.wp.com/bookbins.in/wp-content/uploads/2021/08/Bookbins_12_Rules_For_Life.png?resize=768%2C768&ssl=1" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Atomic Habits</h5>
+                        <p class="card-text text-center">MRP - RS 500</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small class="text-muted "><Button variant="outline-primary" ><Link to = "/buy" className="text-decoration-none text-dark">BUY NOW</Link></Button></small>
+                    </div>
+                </div>  
+            </div>
+            <h4 className='text-right mb-5 text-success'>
+        Way to Knowledge <Link Link to = "/Books" className="text-decoration-none text-danger ">"BOOKS"</Link>
+        </h4>
+        </div>
+    )
+}
