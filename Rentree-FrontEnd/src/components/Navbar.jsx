@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Container = styled.div`
   height: 60px;
@@ -70,6 +70,11 @@ const MenuItem = styled.div`
 `;
 
 const Navbar = () => {
+  const [flag, setFlag] = useState(false);
+  useEffect(() => {
+    setFlag(localStorage.getItem("isAuth"));
+    console.log(flag);
+  });
   const [sesn, setSesn] = useState("");
   return (
     <Container>
@@ -95,7 +100,7 @@ const Navbar = () => {
             </Link>
           </MenuItem>
           <MenuItem>
-            {localStorage.getItem("isAuth") ? (
+            {flag == true ? (
               <Link to="/logout" className="text-decoration-none text-dark">
                 <Button>Log Out</Button>
               </Link>

@@ -2,7 +2,6 @@ import { React } from "react";
 import "./Styles/Navbar.css";
 import { Link } from "react-router-dom";
 
-
 const Navbar = ({ setShow, size }) => {
   return (
     <div>
@@ -22,15 +21,15 @@ const Navbar = ({ setShow, size }) => {
             </li>
           </ul>
           <ul>
-            <li >
-              <i ></i>
+            <li>
+              <i></i>
 
               <Link
                 to="/Epharma/newbooks"
                 className="my_shop"
                 onClick={() => setShow(true)}
               >
-               New Arrivals
+                New Arrivals
               </Link>
             </li>
           </ul>
@@ -48,8 +47,8 @@ const Navbar = ({ setShow, size }) => {
             </li>
           </ul>
           <ul>
-            <li >
-              <i ></i>
+            <li>
+              <i></i>
 
               <Link
                 to="/Epharma/MedicalDevice"
@@ -62,7 +61,7 @@ const Navbar = ({ setShow, size }) => {
           </ul>
           <div className="cart" onClick={() => setShow(false)}>
             <span>
-              <i ></i>
+              <i></i>
               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             </span>
             <span>{size}</span>

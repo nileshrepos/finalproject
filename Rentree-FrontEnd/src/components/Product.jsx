@@ -3,8 +3,9 @@ import {
   SearchOutlined,
   ShoppingCartOutlined,
 } from "@material-ui/icons";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import styled from "styled-components";
+import Buttons from "./Buttons";
 
 const Info = styled.div`
   opacity: 0;
@@ -33,7 +34,7 @@ const Container = styled.div`
   background-color: #f5fbfd;
   position: relative;
 
-  &:hover ${Info}{
+  &:hover ${Info} {
     opacity: 1;
   }
 `;
@@ -68,14 +69,25 @@ const Icon = styled.div`
 `;
 
 const Product = ({ item }) => {
+  const history = useHistory();
+  const handleCartClick = () => {
+    console.log(localStorage.getItem("email"));
+    if (localStorage.getItem("email") == null) {
+      history.push("/login");
+    } else if (localStorage.getItem("email") != null) {
+      history.push("/checkout2");
+    }
+  };
   return (
     <Container>
       <Circle />
       <Image src={item.img} />
       <Info>
         <Icon>
-          <Link to ="/checkoutpage"><ShoppingCartOutlined /></Link>
-          
+          <button
+            className="btn btn-primary sm"
+            onClick={handleCartClick}
+          ></button>
         </Icon>
         {/* <Icon>
           <SearchOutlined />
